@@ -52,6 +52,7 @@
         .logo img { max-width: 280px; width: 100%; height: auto; margin-bottom: 20px; }
         .tagline { font-size: 1.2rem; color: #ccc; margin-bottom: 20px; }
         .contract { background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 40px; display: inline-block; font-family: monospace; font-size: 0.9rem; word-break: break-all; }
+        .price-badge { background: rgba(22,101,52,0.2); padding: 5px 15px; border-radius: 20px; display: inline-block; margin-top: 10px; font-size: 0.9rem; }
         .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 30px 0; }
         .btn { padding: 12px 24px; border-radius: 40px; text-decoration: none; font-weight: bold; transition: all 0.3s; }
         .btn-primary { background: #166534; color: #fff; }
@@ -159,6 +160,7 @@
         </div>
         <div class="tagline" id="tagline">Digital Asset on TON</div>
         <div class="contract">📄 Contract: EQBt1Hi1u3avg4LzoYCwb0fXw6cWIfdagHiJmAelE61cU5ow</div>
+        <div class="price-badge" id="priceBadge">💰 1 EURD = 1 €</div>
         <div class="btn-group">
             <a href="https://t.me/BOYMAT_token_BYT" class="btn btn-primary" target="_blank" id="btnBot">🤖 Telegram Bot</a>
             <a href="https://app.ston.fi/swap?jetton=EQBt1Hi1u3avg4LzoYCwb0fXw6cWIfdagHiJmAelE61cU5ow" class="btn btn-secondary" target="_blank" id="btnBuy">💰 Buy EURD</a>
@@ -174,12 +176,12 @@
             <div class="token-card"><h4>💰 BYT (TON)</h4><p>$227,273</p><p>EQCY5_tj4H_Yz17kODAiMM1jk-IhAgt1WYwNAIV5IW30cbEM</p><a href="https://tonviewer.com/EQCY5_tj4H_Yz17kODAiMM1jk-IhAgt1WYwNAIV5IW30cbEM" class="token-btn">View</a></div>
             <div class="token-card"><h4>🏦 ZBANK</h4><p>$227</p><p>EQBdDRtzRh_plu9_jyN5rLRbqf_oQ8oxov--4UUdxmXizpHX</p><a href="https://tonviewer.com/EQBdDRtzRh_plu9_jyN5rLRbqf_oQ8oxov--4UUdxmXizpHX" class="token-btn">View</a></div>
             <div class="token-card"><h4>🏦 YBANK</h4><p>$227</p><p>EQDSk0pa75FPFIgewAj0Wx4mwJcx1i5lkysdJuRPpU8zlIVE</p><a href="https://tonviewer.com/EQDSk0pa75FPFIgewAj0Wx4mwJcx1i5lkysdJuRPpU8zlIVE" class="token-btn">View</a></div>
-            <div class="token-card"><h4>💶 EURX</h4><p>1 евро</p><p>EQA84dxGA4EHWqx2pcMGYpvCG80tqRCoWJfNeJnB2mLY2m7M</p><a href="https://byt-assist.github.io/eurx/" class="token-btn">Website</a></div>
-            <div class="token-card"><h4>💶 EURG</h4><p>1 евро</p><p>EQAuv8yR6T-Bj3PxCi46AtMKSXgbtXfO5Vt2ZruHgoV8D609</p><a href="https://byt-assist.github.io/eurg/" class="token-btn">Website</a></div>
-            <div class="token-card"><h4>💶 EURZ</h4><p>1 евро</p><p>EQBz3I30PETGxiz8C5N60JfRwNfdU9l6pWNYVelMQjfNpeJw</p><a href="https://tonviewer.com/EQBz3I30PETGxiz8C5N60JfRwNfdU9l6pWNYVelMQjfNpeJw" class="token-btn">View</a></div>
-            <div class="token-card"><h4>📊 EURF</h4><p>1 евро</p><p>EQAuv8yR6T-Bj3PxCi46AtMKSXgbtXfO5Vt2ZruHgoV8D609</p><a href="https://byt-assist.github.io/eurf/" class="token-btn">Website</a></div>
-            <div class="token-card"><h4>💜 EURQ</h4><p>1 евро</p><p>EQBcL6ZXyBZtcYFwrRtMIB_egiDJkrXbEXXV-W2TbcbnUI30</p><a href="https://byt-assist.github.io/eurq/" class="token-btn">Website</a></div>
-            <div class="token-card"><h4>💚 EURD</h4><p>1 евро</p><p>EQBt1Hi1u3avg4LzoYCwb0fXw6cWIfdagHiJmAelE61cU5ow</p><a href="https://byt-assist.github.io/eurd/" class="token-btn">Website</a></div>
+            <div class="token-card"><h4>💶 EURX</h4><p id="priceEURX">1 €</p><p>EQA84dxGA4EHWqx2pcMGYpvCG80tqRCoWJfNeJnB2mLY2m7M</p><a href="https://byt-assist.github.io/eurx/" class="token-btn">Website</a></div>
+            <div class="token-card"><h4>💶 EURG</h4><p id="priceEURG">1 €</p><p>EQAuv8yR6T-Bj3PxCi46AtMKSXgbtXfO5Vt2ZruHgoV8D609</p><a href="https://byt-assist.github.io/eurg/" class="token-btn">Website</a></div>
+            <div class="token-card"><h4>💶 EURZ</h4><p id="priceEURZ">1 €</p><p>EQBz3I30PETGxiz8C5N60JfRwNfdU9l6pWNYVelMQjfNpeJw</p><a href="https://tonviewer.com/EQBz3I30PETGxiz8C5N60JfRwNfdU9l6pWNYVelMQjfNpeJw" class="token-btn">View</a></div>
+            <div class="token-card"><h4>📊 EURF</h4><p id="priceEURF">1 €</p><p>EQAuv8yR6T-Bj3PxCi46AtMKSXgbtXfO5Vt2ZruHgoV8D609</p><a href="https://byt-assist.github.io/eurf/" class="token-btn">Website</a></div>
+            <div class="token-card"><h4>💜 EURQ</h4><p id="priceEURQ">1 €</p><p>EQBcL6ZXyBZtcYFwrRtMIB_egiDJkrXbEXXV-W2TbcbnUI30</p><a href="https://byt-assist.github.io/eurq/" class="token-btn">Website</a></div>
+            <div class="token-card"><h4>💚 EURD</h4><p id="priceEURD">1 €</p><p>EQBt1Hi1u3avg4LzoYCwb0fXw6cWIfdagHiJmAelE61cU5ow</p><a href="https://byt-assist.github.io/eurd/" class="token-btn">Website</a></div>
         </div>
         <div style="margin-top: 20px;">
             <p id="ecoDesc1">✅ <strong>Cross-Collateral 125%</strong> — All tokens accepted as collateral</p>
@@ -284,7 +286,7 @@
             <a href="https://byt-assist.github.io/eurg/">EURG</a> |
             <a href="https://byt-assist.github.io/eurf/">EURF</a>
         </p>
-        <p style="font-size:0.8rem">Network: TON | Price: 1 EURD = 1 евро | Contract: EQBt1Hi1u3avg4LzoYCwb0fXw6cWIfdagHiJmAelE61cU5ow</p>
+        <p style="font-size:0.8rem">Network: TON | Price: 1 EURD = 1 € | Contract: EQBt1Hi1u3avg4LzoYCwb0fXw6cWIfdagHiJmAelE61cU5ow</p>
     </div>
 </div>
 
@@ -299,9 +301,11 @@
     const translations = {
         en: {
             tagline: "Digital Asset on TON",
+            priceBadge: "💰 1 EURD = 1 €",
             btnBot: "🤖 Telegram Bot",
             btnBuy: "💰 Buy EURD",
             btnSupport: "💬 Support",
+            priceEURX: "1 €", priceEURG: "1 €", priceEURZ: "1 €", priceEURF: "1 €", priceEURQ: "1 €", priceEURD: "1 €",
             ecoTitle: "🔗 BYT Assist Ecosystem — All Tokens",
             ecoDesc1: "✅ Cross-Collateral 125% — All tokens accepted as collateral",
             ecoDesc2: "✅ Unified Deposits — Deposit any token, earn yield in BYT",
@@ -330,9 +334,11 @@
         },
         ru: {
             tagline: "Цифровой актив на TON",
+            priceBadge: "💰 1 EURD = 1 €",
             btnBot: "🤖 Telegram Бот",
             btnBuy: "💰 Купить EURD",
             btnSupport: "💬 Поддержка",
+            priceEURX: "1 €", priceEURG: "1 €", priceEURZ: "1 €", priceEURF: "1 €", priceEURQ: "1 €", priceEURD: "1 €",
             ecoTitle: "🔗 Экосистема BYT Assist — Все токены",
             ecoDesc1: "✅ Кросс-коллатераль 125% — Все токены принимаются как залог",
             ecoDesc2: "✅ Единые депозиты — Депозит любого токена, доход в BYT",
@@ -366,9 +372,16 @@
     function setLanguage(lang) {
         const t = translations[lang] || translations[defaultLang];
         document.getElementById('tagline').innerText = t.tagline;
+        document.getElementById('priceBadge').innerHTML = t.priceBadge;
         document.getElementById('btnBot').innerText = t.btnBot;
         document.getElementById('btnBuy').innerText = t.btnBuy;
         document.getElementById('btnSupport').innerText = t.btnSupport;
+        if (document.getElementById('priceEURX')) document.getElementById('priceEURX').innerHTML = t.priceEURX;
+        if (document.getElementById('priceEURG')) document.getElementById('priceEURG').innerHTML = t.priceEURG;
+        if (document.getElementById('priceEURZ')) document.getElementById('priceEURZ').innerHTML = t.priceEURZ;
+        if (document.getElementById('priceEURF')) document.getElementById('priceEURF').innerHTML = t.priceEURF;
+        if (document.getElementById('priceEURQ')) document.getElementById('priceEURQ').innerHTML = t.priceEURQ;
+        if (document.getElementById('priceEURD')) document.getElementById('priceEURD').innerHTML = t.priceEURD;
         document.getElementById('ecoTitle').innerText = t.ecoTitle;
         document.getElementById('ecoDesc1').innerHTML = t.ecoDesc1;
         document.getElementById('ecoDesc2').innerHTML = t.ecoDesc2;
