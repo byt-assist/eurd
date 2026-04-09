@@ -168,7 +168,7 @@
 
     <!-- BYT Ecosystem Integration -->
     <div class="formula-box" style="background: rgba(22,101,52,0.15); border: 2px solid #166534;">
-        <p style="font-size: 1.5rem; font-weight: bold;">🔗 BYT Assist Ecosystem — All Tokens</p>
+        <p style="font-size: 1.5rem; font-weight: bold;" id="ecoTitle">🔗 BYT Assist Ecosystem — All Tokens</p>
         <div class="ecosystem-grid">
             <div class="token-card"><h4>💰 BYT (BSC)</h4><p>$227,273,174</p><p>0x7352cDBcA63F62358f08F6514d3B7fF2a2872AaD</p><a href="https://byt-assist.github.io/byt-assist/" class="token-btn">Website</a></div>
             <div class="token-card"><h4>💰 BYT (TON)</h4><p>$227,273</p><p>EQCY5_tj4H_Yz17kODAiMM1jk-IhAgt1WYwNAIV5IW30cbEM</p><a href="https://tonviewer.com/EQCY5_tj4H_Yz17kODAiMM1jk-IhAgt1WYwNAIV5IW30cbEM" class="token-btn">View</a></div>
@@ -182,10 +182,10 @@
             <div class="token-card"><h4>💚 EURD</h4><p>1 евро</p><p>EQBt1Hi1u3avg4LzoYCwb0fXw6cWIfdagHiJmAelE61cU5ow</p><a href="https://byt-assist.github.io/eurd/" class="token-btn">Website</a></div>
         </div>
         <div style="margin-top: 20px;">
-            <p>✅ <strong>Cross-Collateral 125%</strong> — All tokens accepted as collateral<br>
-            ✅ <strong>Unified Deposits</strong> — Deposit any token, earn yield in BYT<br>
-            ✅ <strong>Cross-Chain Loans</strong> — Collateral in TON tokens, loan in BYT (BSC)<br>
-            ✅ <strong>Single Escrow & KYC</strong> — One verification for all ecosystem tokens</p>
+            <p id="ecoDesc1">✅ <strong>Cross-Collateral 125%</strong> — All tokens accepted as collateral</p>
+            <p id="ecoDesc2">✅ <strong>Unified Deposits</strong> — Deposit any token, earn yield in BYT</p>
+            <p id="ecoDesc3">✅ <strong>Cross-Chain Loans</strong> — Collateral in TON tokens, loan in BYT (BSC)</p>
+            <p id="ecoDesc4">✅ <strong>Single Escrow & KYC</strong> — One verification for all ecosystem tokens</p>
         </div>
     </div>
 
@@ -302,6 +302,11 @@
             btnBot: "🤖 Telegram Bot",
             btnBuy: "💰 Buy EURD",
             btnSupport: "💬 Support",
+            ecoTitle: "🔗 BYT Assist Ecosystem — All Tokens",
+            ecoDesc1: "✅ Cross-Collateral 125% — All tokens accepted as collateral",
+            ecoDesc2: "✅ Unified Deposits — Deposit any token, earn yield in BYT",
+            ecoDesc3: "✅ Cross-Chain Loans — Collateral in TON tokens, loan in BYT (BSC)",
+            ecoDesc4: "✅ Single Escrow & KYC — One verification for all ecosystem tokens",
             formula1: "📈 Buy +1% of EURD supply",
             formula2: "💎 Get +9% in illiquid assets added to your liquidity",
             formulaDesc: "(frozen funds, side pockets, NPLs, distressed debt, gold, diamonds, crypto bills)",
@@ -328,6 +333,11 @@
             btnBot: "🤖 Telegram Бот",
             btnBuy: "💰 Купить EURD",
             btnSupport: "💬 Поддержка",
+            ecoTitle: "🔗 Экосистема BYT Assist — Все токены",
+            ecoDesc1: "✅ Кросс-коллатераль 125% — Все токены принимаются как залог",
+            ecoDesc2: "✅ Единые депозиты — Депозит любого токена, доход в BYT",
+            ecoDesc3: "✅ Кросс-чейн кредиты — Залог в токенах TON, кредит в BYT (BSC)",
+            ecoDesc4: "✅ Единый эскроу и KYC — Одна верификация для всех токенов экосистемы",
             formula1: "📈 Вы покупаете +1% от эмиссии EURD",
             formula2: "💎 К вашей ликвидности добавляется +9% в неликвидных активах",
             formulaDesc: "(замороженные фонды, side pockets, NPL, проблемные долги, золото, бриллианты, криптовекселя)",
@@ -348,162 +358,6 @@
             card5Desc: "Покупайте токенизированное золото (PAXG, XAUT) за EURD.",
             card6Title: "Бизнес решения",
             card6Desc: "Принимайте EURD. Корпоративные казначейства, B2B."
-        },
-        it: {
-            tagline: "Asset digitale su TON", btnBot: "🤖 Bot Telegram", btnBuy: "💰 Compra EURD", btnSupport: "💬 Supporto",
-            formula1: "📈 Acquista +1% della fornitura di EURD", formula2: "💎 Ottieni +9% in attività illiquide aggiunte alla tua liquidità",
-            formulaDesc: "(fondi congelati, side pockets, NPL, debiti in sofferenza, oro, diamanti, cambiali crypto)",
-            calcTitle: "📊 Calcola la tua crescita", calcBtn: "Calcola",
-            title1: "📚 Ecosistema completo", title2: "⚡ Cosa puoi fare con EURD", title3: "💰 Tokenomica di EURD",
-            card1Title: "Compra EURD", card1Desc: "Scambia TON con EURD su STON.fi. Oppure compra TON con carta → scambia.",
-            card2Title: "Guadagna rendimento", card2Desc: "Deposita EURD per 25–60 mesi. Guadagna fino al 19.8% APY.",
-            card3Title: "Ottieni un prestito", card3Desc: "Usa EURD come garanzia. Mutuo crypto, finanza islamica.",
-            card4Title: "Servizi di deposito", card4Desc: "SWIFT GPI, DMCC Dubai, LEXR Svizzera. Fiat → EURD sicuro.",
-            card5Title: "Oro e diamanti", card5Desc: "Acquista oro tokenizzato (PAXG, XAUT) con EURD. Deposito 5–20 anni.",
-            card6Title: "Soluzioni aziendali", card6Desc: "Accetta pagamenti in EURD. Tesoreria aziendale, B2B cross-border."
-        },
-        ar: {
-            tagline: "أصل رقمي على TON", btnBot: "🤖 بوت تيليجرام", btnBuy: "💰 شراء EURD", btnSupport: "💬 دعم",
-            formula1: "📈 قم بشراء +1% من إمداد EURD", formula2: "💎 احصل على +9% في الأصول غير السائلة المضافة إلى سيولتك",
-            formulaDesc: "(الأموال المجمدة، الجيوب الجانبية، القروض المتعثرة، الديون المتعثرة، الذهب، الماس، سندات العملات الرقمية)",
-            calcTitle: "📊 احسب نموك", calcBtn: "احسب",
-            title1: "📚 النظام البيئي الكامل", title2: "⚡ ماذا يمكنك أن تفعل مع EURD", title3: "💰 اقتصاديات رمز EURD",
-            card1Title: "شراء EURD", card1Desc: "استبدل TON بـ EURD على STON.fi. أو اشتر TON ببطاقة → استبدل.",
-            card2Title: "كسب العائد", card2Desc: "قم بإيداع EURD لمدة 25–60 شهرًا. اربح حتى 19.8% سنويًا.",
-            card3Title: "الحصول على قرض", card3Desc: "استخدم EURD كضمان. رهن عقاري للعملات الرقمية، تمويل إسلامي.",
-            card4Title: "خدمات الضمان", card4Desc: "SWIFT GPI، DMCC دبي، LEXR سويسرا. تحويل آمن من العملات الورقية إلى EURD.",
-            card5Title: "الذهب والماس", card5Desc: "اشترِ الذهب المرمز (PAXG، XAUT) بـ EURD. تخزين 5–20 سنة.",
-            card6Title: "حلول الأعمال", card6Desc: "اقبل مدفوعات EURD. الخزانة المؤسسية، المعاملات عبر الحدود B2B."
-        },
-        fa: {
-            tagline: "دارایی دیجیتال در TON", btnBot: "🤖 ربات تلگرام", btnBuy: "💰 خرید EURD", btnSupport: "💬 پشتیبانی",
-            formula1: "📈 خرید +1% از عرضه EURD", formula2: "💎 دریافت +9% از دارایی‌های غیر نقدشونده به نقدینگی شما اضافه می‌شود",
-            formulaDesc: "(وجوه مسدود شده، جیب‌های جانبی، وام‌های معوق، بدهی‌های مشکل‌دار، طلا، الماس، اسناد رمزارزی)",
-            calcTitle: "📊 رشد خود را محاسبه کنید", calcBtn: "محاسبه",
-            title1: "📚 اکوسیستم کامل", title2: "⚡ با EURD چه کاری می‌توانید انجام دهید", title3: "💰 اقتصاد توکن EURD",
-            card1Title: "خرید EURD", card1Desc: "TON را با EURD در STON.fi مبادله کنید. یا TON را با کارت بخرید → مبادله کنید.",
-            card2Title: "کسب بازدهی", card2Desc: "EURD را به مدت 25–60 ماه سپرده گذاری کنید. تا 19.8% سود سالانه کسب کنید.",
-            card3Title: "دریافت وام", card3Desc: "از EURD به عنوان وثیقه استفاده کنید. رهن رمزارزی، تأمین مالی اسلامی.",
-            card4Title: "خدمات اسکرو", card4Desc: "SWIFT GPI، DMCC دبی، LEXR سوئیس. تبدیل امن فیات → EURD.",
-            card5Title: "طلا و الماس", card5Desc: "طلاهای توکنیزه شده (PAXG، XAUT) را با EURD بخرید. نگهداری 5–20 ساله.",
-            card6Title: "راهکارهای تجاری", card6Desc: "پرداخت‌های EURD را بپذیرید. خزانه شرکتی، B2B فرامرزی."
-        },
-        zh: {
-            tagline: "TON上的数字资产", btnBot: "🤖 电报机器人", btnBuy: "💰 购买 EURD", btnSupport: "💬 支持",
-            formula1: "📈 购买 +1% 的 EURD 供应量", formula2: "💎 获得 +9% 的非流动性资产添加到您的流动性中",
-            formulaDesc: "(冻结资金、侧袋、不良贷款、不良债务、黄金、钻石、加密票据)",
-            calcTitle: "📊 计算您的增长", calcBtn: "计算",
-            title1: "📚 完整生态系统", title2: "⚡ 您可以用 EURD 做什么", title3: "💰 EURD 代币经济学",
-            card1Title: "购买 EURD", card1Desc: "在 STON.fi 上将 TON 兑换为 EURD。或用银行卡购买 TON → 兑换。",
-            card2Title: "赚取收益", card2Desc: "存入 EURD 25-60 个月。年化收益率高达 19.8%。",
-            card3Title: "获得贷款", card3Desc: "使用 EURD 作为抵押品。加密抵押贷款、伊斯兰金融。",
-            card4Title: "托管服务", card4Desc: "SWIFT GPI、DMCC 迪拜、LEXR 瑞士。安全法币 → EURD。",
-            card5Title: "黄金与钻石", card5Desc: "用 EURD 购买代币化黄金 (PAXG, XAUT)。5-20 年存储。",
-            card6Title: "商业解决方案", card6Desc: "接受 EURD 支付。企业财资、B2B 跨境。"
-        },
-        uz: {
-            tagline: "TON da raqamli aktiv", btnBot: "🤖 Telegram Bot", btnBuy: "💰 EURD Sotib olish", btnSupport: "💬 Yordam",
-            formula1: "📈 EURD ta'minotining +1% ni sotib oling", formula2: "💎 Likvidligingizga +9% likvid bo'lmagan aktivlar qo'shiladi",
-            formulaDesc: "(muzlatilgan fondlar, side pocketlar, NPLlar, muammoli qarzlar, oltin, olmos, kriptoveksellar)",
-            calcTitle: "📊 O'sishingizni hisoblang", calcBtn: "Hisoblash",
-            title1: "📚 To'liq ekotizim", title2: "⚡ EURD bilan nima qila olasiz", title3: "💰 EURD Tokenomikasi",
-            card1Title: "EURD Sotib olish", card1Desc: "STON.fi da TONni EURDga almashtiring. Yoki karta bilan TON sotib oling → almashtiring.",
-            card2Title: "Daromad olish", card2Desc: "EURDni 25-60 oyga depozitga qo'ying. Yillik 19.8% gacha daromad.",
-            card3Title: "Kredit olish", card3Desc: "EURDni garov sifatida ishlating. Kripto ipoteka, islom moliyasi.",
-            card4Title: "Eskrou xizmatlari", card4Desc: "SWIFT GPI, DMCC Dubai, LEXR Shveysariya. Xavfsiz fiat → EURD.",
-            card5Title: "Oltin va olmos", card5Desc: "EURD bilan tokenlashtirilgan oltin (PAXG, XAUT) sotib oling. 5-20 yil saqlash.",
-            card6Title: "Biznes yechimlari", card6Desc: "EURD to'lovlarini qabul qiling. Korporativ g'azna, B2B transchegaraviy."
-        },
-        kz: {
-            tagline: "TON желісіндегі цифрлық актив", btnBot: "🤖 Telegram Бот", btnBuy: "💰 EURD Сатып алу", btnSupport: "💬 Қолдау",
-            formula1: "📈 EURD ұсынысының +1% сатып алыңыз", formula2: "💎 Сіздің ликвидтілігіңізге +9% ликвидті емес активтер қосылады",
-            formulaDesc: "(мұздатылған қорлар, side pocketтар, NPL, проблемалы қарыздар, алтын, гауһар, криптовексельдер)",
-            calcTitle: "📊 Өсуіңізді есептеңіз", calcBtn: "Есептеу",
-            title1: "📚 Толық экожүйе", title2: "⚡ EURD көмегімен не істеуге болады", title3: "💰 EURD Токеномикасы",
-            card1Title: "EURD Сатып алу", card1Desc: "STON.fi платформасында TON-ды EURD-қа ауыстырыңыз. Немесе карта арқылы TON сатып алыңыз → ауыстырыңыз.",
-            card2Title: "Табыс табу", card2Desc: "EURD-ты 25-60 айға депозитке салыңыз. Жылдық 19.8% дейін табыс.",
-            card3Title: "Несие алу", card3Desc: "EURD-ты кепіл ретінде пайдаланыңыз. Крипто-ипотека, ислам қаржыландыру.",
-            card4Title: "Эскроу қызметтері", card4Desc: "SWIFT GPI, DMCC Дубай, LEXR Швейцария. Қауіпсіз фиат → EURD.",
-            card5Title: "Алтын және гауһар", card5Desc: "EURD арқылы токенделген алтын (PAXG, XAUT) сатып алыңыз. 5-20 жыл сақтау.",
-            card6Title: "Бизнес шешімдер", card6Desc: "EURD төлемдерін қабылдаңыз. Корпоративтік қазына, B2B трансшекаралық."
-        },
-        es: {
-            tagline: "Activo digital en TON", btnBot: "🤖 Bot de Telegram", btnBuy: "💰 Comprar EURD", btnSupport: "💬 Soporte",
-            formula1: "📈 Compra +1% del suministro de EURD", formula2: "💎 Obtén +9% en activos ilíquidos agregados a tu liquidez",
-            formulaDesc: "(fondos congelados, side pockets, NPLs, deuda problemática, oro, diamantes, pagarés cripto)",
-            calcTitle: "📊 Calcula tu crecimiento", calcBtn: "Calcular",
-            title1: "📚 Ecosistema completo", title2: "⚡ Qué puedes hacer con EURD", title3: "💰 Tokenómica de EURD",
-            card1Title: "Comprar EURD", card1Desc: "Intercambia TON por EURD en STON.fi. O compra TON con tarjeta → intercambia.",
-            card2Title: "Ganar rendimiento", card2Desc: "Deposita EURD por 25–60 meses. Gana hasta 19.8% APY.",
-            card3Title: "Obtener un préstamo", card3Desc: "Usa EURD como garantía. Hipoteca cripto, financiación islámica.",
-            card4Title: "Servicios de depósito", card4Desc: "SWIFT GPI, DMCC Dubái, LEXR Suiza. Conversión segura de fiat → EURD.",
-            card5Title: "Oro y diamantes", card5Desc: "Compra oro tokenizado (PAXG, XAUT) con EURD. Almacenamiento 5-20 años.",
-            card6Title: "Soluciones empresariales", card6Desc: "Acepta pagos en EURD. Tesorería corporativa, B2B transfronterizo."
-        },
-        de: {
-            tagline: "Digitaler Vermögenswert auf TON", btnBot: "🤖 Telegram Bot", btnBuy: "💰 EURD kaufen", btnSupport: "💬 Support",
-            formula1: "📈 Kaufen Sie +1% des EURD-Angebots", formula2: "💎 Erhalten Sie +9% an illiquiden Vermögenswerten zu Ihrer Liquidität",
-            formulaDesc: "(eingefrorene Gelder, Side Pockets, NPLs, notleidende Kredite, Gold, Diamanten, Kryptowechsel)",
-            calcTitle: "📊 Berechnen Sie Ihr Wachstum", calcBtn: "Berechnen",
-            title1: "📚 Vollständiges Ökosystem", title2: "⚡ Was Sie mit EURD tun können", title3: "💰 EURD Tokenomics",
-            card1Title: "EURD kaufen", card1Desc: "Tauschen Sie TON auf STON.fi gegen EURD. Oder kaufen Sie TON mit Karte → tauschen.",
-            card2Title: "Erträge erzielen", card2Desc: "Zahlen Sie EURD für 25–60 Monate ein. Verdienen Sie bis zu 19,8 % APY.",
-            card3Title: "Kredit erhalten", card3Desc: "Verwenden Sie EURD als Sicherheit. Krypto-Hypothek, islamische Finanzierung.",
-            card4Title: "Treuhanddienste", card4Desc: "SWIFT GPI, DMCC Dubai, LEXR Schweiz. Sicherer Fiat → EURD.",
-            card5Title: "Gold & Diamanten", card5Desc: "Kaufen Sie tokenisiertes Gold (PAXG, XAUT) mit EURD. 5–20 Jahre Lagerung.",
-            card6Title: "Geschäftslösungen", card6Desc: "Akzeptieren Sie EURD-Zahlungen. Firmenschatzamt, B2B-Cross-Border."
-        },
-        fr: {
-            tagline: "Actif numérique sur TON", btnBot: "🤖 Bot Telegram", btnBuy: "💰 Acheter EURD", btnSupport: "💬 Support",
-            formula1: "📈 Achetez +1% de l'offre EURD", formula2: "💎 Obtenez +9% d'actifs illiquides ajoutés à votre liquidité",
-            formulaDesc: "(fonds gelés, side pockets, NPL, dettes difficiles, or, diamants, billets crypto)",
-            calcTitle: "📊 Calculez votre croissance", calcBtn: "Calculer",
-            title1: "📚 Écosystème complet", title2: "⚡ Ce que vous pouvez faire avec EURD", title3: "💰 Tokenomique EURD",
-            card1Title: "Acheter EURD", card1Desc: "Échangez TON contre EURD sur STON.fi. Ou achetez TON par carte → échangez.",
-            card2Title: "Gagner du rendement", card2Desc: "Déposez EURD pendant 25–60 mois. Gagnez jusqu'à 19,8 % APY.",
-            card3Title: "Obtenir un prêt", card3Desc: "Utilisez EURD comme garantie. Hypothèque crypto, financement islamique.",
-            card4Title: "Services de séquestre", card4Desc: "SWIFT GPI, DMCC Dubaï, LEXR Suisse. Conversion sécurisée fiat → EURD.",
-            card5Title: "Or et diamants", card5Desc: "Achetez de l'or tokenisé (PAXG, XAUT) avec EURD. Stockage 5–20 ans.",
-            card6Title: "Solutions d'entreprise", card6Desc: "Acceptez les paiements EURD. Trésorerie d'entreprise, B2B transfrontalier."
-        },
-        ja: {
-            tagline: "TON上のデジタル資産", btnBot: "🤖 Telegramボット", btnBuy: "💰 EURDを購入", btnSupport: "💬 サポート",
-            formula1: "📈 EURD供給量の+1%を購入", formula2: "💎 流動性に+9%の非流動性資産が追加されます",
-            formulaDesc: "(凍結資金、サイドポケット、不良債権、問題債務、金、ダイヤモンド、暗号手形)",
-            calcTitle: "📊 成長を計算", calcBtn: "計算",
-            title1: "📚 完全なエコシステム", title2: "⚡ EURDでできること", title3: "💰 EURDトークノミクス",
-            card1Title: "EURDを購入", card1Desc: "STON.fiでTONをEURDに交換。またはカードでTONを購入→交換。",
-            card2Title: "利回りを得る", card2Desc: "EURDを25～60ヶ月間預け入れ。最大19.8%の年利。",
-            card3Title: "ローンを受ける", card3Desc: "EURDを担保として使用。暗号住宅ローン、イスラム金融。",
-            card4Title: "エスクローサービス", card4Desc: "SWIFT GPI、DMCCドバイ、LEXRスイス。安全なフィアット→EURD。",
-            card5Title: "金とダイヤモンド", card5Desc: "EURDでトークン化された金（PAXG、XAUT）を購入。5～20年の保管。",
-            card6Title: "ビジネスソリューション", card6Desc: "EURD支払いを受け入れ。企業財務、B2Bクロスボーダー。"
-        },
-        th: {
-            tagline: "สินทรัพย์ดิจิทัลบน TON", btnBot: "🤖 บอท Telegram", btnBuy: "💰 ซื้อ EURD", btnSupport: "💬 สนับสนุน",
-            formula1: "📈 ซื้อ +1% ของอุปทาน EURD", formula2: "💎 ได้รับ +9% ในสินทรัพย์สภาพคล่องต่ำเพิ่มในสภาพคล่องของคุณ",
-            formulaDesc: "(กองทุนถูกแช่แข็ง, side pockets, NPL, หนี้เสีย, ทองคำ, เพชร, ตั๋วเงินคริปโต)",
-            calcTitle: "📊 คำนวณการเติบโตของคุณ", calcBtn: "คำนวณ",
-            title1: "📚 ระบบนิเวศที่สมบูรณ์", title2: "⚡ สิ่งที่คุณสามารถทำได้กับ EURD", title3: "💰 EURD Tokenomics",
-            card1Title: "ซื้อ EURD", card1Desc: "สลับ TON เป็น EURD บน STON.fi หรือซื้อ TON ด้วยบัตร → สลับ",
-            card2Title: "รับผลตอบแทน", card2Desc: "ฝาก EURD 25–60 เดือน รับสูงสุด 19.8% APY",
-            card3Title: "ขอสินเชื่อ", card3Desc: "ใช้ EURD เป็นหลักประกัน สินเชื่อจำนองคริปโต, การเงินอิสลาม",
-            card4Title: "บริการเอสโครว์", card4Desc: "SWIFT GPI, DMCC Dubai, LEXR Switzerland ปลอดภัย fiat → EURD",
-            card5Title: "ทองคำและเพชร", card5Desc: "ซื้อทองคำโทเค็น (PAXG, XAUT) ด้วย EURD เก็บรักษา 5–20 ปี",
-            card6Title: "โซลูชันธุรกิจ", card6Desc: "รับการชำระเงิน EURD คลังองค์กร, B2B ข้ามพรมแดน"
-        },
-        hi: {
-            tagline: "TON पर डिजिटल एसेट", btnBot: "🤖 टेलीग्राम बॉट", btnBuy: "💰 EURD खरीदें", btnSupport: "💬 सहायता",
-            formula1: "📈 EURD आपूर्ति का +1% खरीदें", formula2: "💎 आपकी लिक्विडिटी में +9% गैर-लिक्विड एसेट जोड़े जाते हैं",
-            formulaDesc: "(फ्रोजन फंड, साइड पॉकेट, एनपीएल, संकटग्रस्त ऋण, सोना, हीरे, क्रिप्टो बिल)",
-            calcTitle: "📊 अपनी वृद्धि की गणना करें", calcBtn: "गणना करें",
-            title1: "📚 पूर्ण पारिस्थितिकी तंत्र", title2: "⚡ आप EURD के साथ क्या कर सकते हैं", title3: "💰 EURD टोकेनोमिक्स",
-            card1Title: "EURD खरीदें", card1Desc: "STON.fi पर TON को EURD में बदलें। या कार्ड से TON खरीदें → बदलें।",
-            card2Title: "उपज अर्जित करें", card2Desc: "EURD को 25–60 महीनों के लिए जमा करें। 19.8% APY तक कमाएं।",
-            card3Title: "ऋण प्राप्त करें", card3Desc: "EURD को संपार्श्विक के रूप में उपयोग करें। क्रिप्टो बंधक, इस्लामी वित्तपोषण।",
-            card4Title: "एस्क्रो सेवाएं", card4Desc: "SWIFT GPI, DMCC दुबई, LEXR स्विट्जरलैंड। सुरक्षित फिएट → EURD।",
-            card5Title: "सोना और हीरे", card5Desc: "EURD के साथ टोकनयुक्त सोना (PAXG, XAUT) खरीदें। 5–20 साल भंडारण।",
-            card6Title: "व्यावसायिक समाधान", card6Desc: "EURD भुगतान स्वीकार करें। कॉर्पोरेट ट्रेजरी, B2B क्रॉस-बॉर्डर।"
         }
     };
 
@@ -515,6 +369,11 @@
         document.getElementById('btnBot').innerText = t.btnBot;
         document.getElementById('btnBuy').innerText = t.btnBuy;
         document.getElementById('btnSupport').innerText = t.btnSupport;
+        document.getElementById('ecoTitle').innerText = t.ecoTitle;
+        document.getElementById('ecoDesc1').innerHTML = t.ecoDesc1;
+        document.getElementById('ecoDesc2').innerHTML = t.ecoDesc2;
+        document.getElementById('ecoDesc3').innerHTML = t.ecoDesc3;
+        document.getElementById('ecoDesc4').innerHTML = t.ecoDesc4;
         document.getElementById('formula1').innerHTML = t.formula1;
         document.getElementById('formula2').innerHTML = t.formula2;
         document.getElementById('formulaDesc').innerText = t.formulaDesc;
